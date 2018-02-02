@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'bootstrap',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8f0eebf292dd207aaa6a39184ff45ef9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd0b5dfdbf762a4b206036f5f1d226f10',
+  'native_key' => 'bootstrap.dropdown_disabled',
+  'object' => '{"key":"bootstrap.dropdown_disabled","value":"1","xtype":"textfield","namespace":"bootstrap","area":"general","editedon":null}',
+);

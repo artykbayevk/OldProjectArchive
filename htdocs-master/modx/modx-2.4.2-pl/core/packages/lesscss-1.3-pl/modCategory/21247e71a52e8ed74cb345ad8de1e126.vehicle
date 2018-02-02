@@ -1,0 +1,82 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '2e0de9c710021278b3fb5d82951d0f4c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":2,"source":1,"property_preprocess":0,"name":"lessCSS","description":"","editor_type":0,"category":2,"cache_type":0,"snippet":"\\/\\/ -------------------------\\n\\/\\/ LESS CSS for MODX\\n\\/\\/ v 1.3 :: Sep 22, 2014\\n\\/\\/ Written by Darren Doyle\\n\\/\\/ http:\\/\\/inventurous.net\\/\\n\\/\\/\\n\\/\\/ uses LESS PHP 0.3.9\\n\\/\\/ http:\\/\\/leafo.net\\/lessphp\\/\\n\\/\\/ -------------------------\\n\\n\\/\\/ get the contents of the less file\\n$string = file_get_contents($modx->config[\'base_path\'].$path.$file);\\n \\n\\/\\/ run if not empty\\nif ($string) {\\n\\t \\n\\t\\/\\/ load the lessphp compiler\\n\\t$core = $modx->config[\'core_path\'];\\n\\trequire_once($core.\'components\\/lesscss\\/lessc.inc.php\');\\n\\t \\n\\t\\/\\/ compile and return css\\n\\t$lc = new lessc();\\n\\t$lc->importDir = $modx->config[\'base_path\'].$path;\\n\\t$string = $lc->parse($string);\\n\\t \\n\\t\\/\\/ fix relative paths\\n\\tif ( $fixRelativePaths ) {\\n\\t\\t$pattern = \'\\/(url\\\\((?:\\\\s+\\"{1}|\\\\s+\\\\\'{1}|\\"{1}|\\\\\'{1}|\\\\s*))((?!data:|https?:\\\\\\/\\\\\\/|\\\\\\/)[^\\"\\\\\'\\\\s]*)((?:\\"{1}\\\\s*|\\\\\'{1}\\\\s*|\\\\s*)\\\\))\\/i\';\\n\\t\\t$string = preg_replace($pattern, \'${1}\'.$modx->config[\'base_url\'].$path.\'${2}${3}\', $string);\\n\\t}\\n\\t\\n\\t\\/\\/ strip unnecessary white space from output\\n\\tif ( $compress ) {\\n\\t\\t$pattern = \'\\/(?<=\\\\:)(\\\\s)(?=\\\\;)|(\\\\;\\\\s*)(?=\\\\})|(\\\\s+)(?=\\\\{)|(?<=,)(\\\\s+)(?=.*\\\\{)|(?<=\\\\{|\\\\:)(\\\\s+)|(?<=\\\\;)(\\\\s+)(?=[[:alnum:]])|(\\\\n|\\\\r)\\/i\';\\n\\t\\t$string = preg_replace($pattern, \'\', $string);\\t\\n\\t}\\n\\t\\n\\t\\/\\/ return the CSS\\n\\treturn $string;\\n}","locked":0,"properties":"a:4:{s:8:\\"compress\\";a:7:{s:4:\\"name\\";s:8:\\"compress\\";s:4:\\"desc\\";s:24:\\"compress the CSS output?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:4:\\"file\\";a:7:{s:4:\\"name\\";s:4:\\"file\\";s:4:\\"desc\\";s:59:\\"the full name of the less file to use. (i.e., \\"style.less\\")\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:16:\\"fixRelativePaths\\";a:7:{s:4:\\"name\\";s:16:\\"fixRelativePaths\\";s:4:\\"desc\\";s:83:\\"should relative paths be prepended with the full path? (it\'s best to leave this on)\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}s:4:\\"path\\";a:7:{s:4:\\"name\\";s:4:\\"path\\";s:4:\\"desc\\";s:123:\\"input the path to the LESS files relative to the base_url, including trailing slash. (i.e., \\"assets\\/templates\\/myTemplate\\/\\")\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"\\/\\/ -------------------------\\n\\/\\/ LESS CSS for MODX\\n\\/\\/ v 1.3 :: Sep 22, 2014\\n\\/\\/ Written by Darren Doyle\\n\\/\\/ http:\\/\\/inventurous.net\\/\\n\\/\\/\\n\\/\\/ uses LESS PHP 0.3.9\\n\\/\\/ http:\\/\\/leafo.net\\/lessphp\\/\\n\\/\\/ -------------------------\\n\\n\\/\\/ get the contents of the less file\\n$string = file_get_contents($modx->config[\'base_path\'].$path.$file);\\n \\n\\/\\/ run if not empty\\nif ($string) {\\n\\t \\n\\t\\/\\/ load the lessphp compiler\\n\\t$core = $modx->config[\'core_path\'];\\n\\trequire_once($core.\'components\\/lesscss\\/lessc.inc.php\');\\n\\t \\n\\t\\/\\/ compile and return css\\n\\t$lc = new lessc();\\n\\t$lc->importDir = $modx->config[\'base_path\'].$path;\\n\\t$string = $lc->parse($string);\\n\\t \\n\\t\\/\\/ fix relative paths\\n\\tif ( $fixRelativePaths ) {\\n\\t\\t$pattern = \'\\/(url\\\\((?:\\\\s+\\"{1}|\\\\s+\\\\\'{1}|\\"{1}|\\\\\'{1}|\\\\s*))((?!data:|https?:\\\\\\/\\\\\\/|\\\\\\/)[^\\"\\\\\'\\\\s]*)((?:\\"{1}\\\\s*|\\\\\'{1}\\\\s*|\\\\s*)\\\\))\\/i\';\\n\\t\\t$string = preg_replace($pattern, \'${1}\'.$modx->config[\'base_url\'].$path.\'${2}${3}\', $string);\\n\\t}\\n\\t\\n\\t\\/\\/ strip unnecessary white space from output\\n\\tif ( $compress ) {\\n\\t\\t$pattern = \'\\/(?<=\\\\:)(\\\\s)(?=\\\\;)|(\\\\;\\\\s*)(?=\\\\})|(\\\\s+)(?=\\\\{)|(?<=,)(\\\\s+)(?=.*\\\\{)|(?<=\\\\{|\\\\:)(\\\\s+)|(?<=\\\\;)(\\\\s+)(?=[[:alnum:]])|(\\\\n|\\\\r)\\/i\';\\n\\t\\t$string = preg_replace($pattern, \'\', $string);\\t\\n\\t}\\n\\t\\n\\t\\/\\/ return the CSS\\n\\treturn $string;\\n}"}',
+        'guid' => '5395a32344c77cc20a349068f822729e',
+        'native_key' => 2,
+        'signature' => 'ab9a55748227fef077d5442dbdb96399',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'lesscss',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lesscss-1.3-pl\\/modCategory\\/21247e71a52e8ed74cb345ad8de1e126\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"lesscss"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lesscss-1.3-pl\\/modCategory\\/21247e71a52e8ed74cb345ad8de1e126\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"lesscss"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lesscss-1.3-pl\\/modCategory\\/21247e71a52e8ed74cb345ad8de1e126\\/2\\/","target":"return \\"\\".MODX_CORE_PATH.\\"components\\/\\";","name":"lesscss"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lesscss-1.3-pl\\/modCategory\\/21247e71a52e8ed74cb345ad8de1e126\\/3\\/","target":"return \\"\\".MODX_ASSETS_PATH.\\"components\\/\\";","name":"lesscss"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3a4f70e8ac143f6172f38a9236ff79cb',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '21247e71a52e8ed74cb345ad8de1e126',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"lessCSS"}',
+);

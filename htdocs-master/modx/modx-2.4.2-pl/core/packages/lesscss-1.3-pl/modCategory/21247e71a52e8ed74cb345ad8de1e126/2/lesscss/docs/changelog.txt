@@ -1,0 +1,13 @@
+- v1.3 -
+[ref] Updated lessphp to gpeasy version
+
+- v1.2 -
+[ref] Updated lessphp version to 0.4.0
+
+- v1.1 -
+[ref] Updated lessphp version to 0.3.9
+
+- v1.0 Public release-
+[ref] Updated lessphp version to 0.3.2-4
+[ref] relative path fixing
+[add] compress output (strip unnecessary white space)

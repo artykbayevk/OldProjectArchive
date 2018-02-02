@@ -1,0 +1,857 @@
+body,html,h1,h2,h3,h4,h5,h6,div,ul,li,img{
+  margin: 0px;
+  padding: 0px;
+  font-family: serif,Arial,Helvetica;
+}
+/*HEADER STYLE*/
+.subHeader{
+  width: 100%;
+  margin: 0px;
+  padding-top: 13px;
+  height: 260px;
+  background-color: #fff;
+  background-image: url("../files/bc.png");
+}
+.header{
+  border: solid black 1 px;
+  width: 85%;
+  height: 33px;
+  background-color: rgb(0,63,69);
+  margin: 0px auto;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.headerItem{
+  text-align: center;
+  height: 100%;
+}
+
+.headerItem li{
+  height: 100%;
+  display: inline-block;
+  padding-top: 8px ;
+  width: 13.7%;
+  text-align: center;
+}
+
+.headerItem li{
+  border-left: 2px white solid;
+}
+
+.headerItem li:first-child{
+  border: none;
+}
+
+.headerItem a{
+  text-decoration: none;
+  color: white;
+}
+.logoHeader{
+  width: 70%;
+  height: 75%;
+  margin: 0px auto;
+
+}
+
+.logoHeader div{
+  display: inline-block;
+  width: 33%;
+  height: 95%;
+  float: left;
+  text-align: center;
+  font-style: italic;
+  color: #003F44;
+  font-size: 45px;
+  font-weight: bold;
+}
+.log1 p:first-child{
+  margin-top: 40px;;
+}
+.log1 p:last-child{
+  margin-top: -30px;
+}
+.log2 p:last-child{
+    margin-top: -30px;
+}
+.log2 p:first-child{
+  margin-top: 40px;
+}
+.img img{
+  width: 54%;
+  border:none;
+  margin: 0% 10% 0% 10%;
+}
+
+/*HEADER STYLE*/
+
+.content{
+  width: 75%;
+  height: 1000px;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+.firstTable{
+  width: 80%;
+  margin: 0px auto;
+  color: rgb(0, 63, 68);
+  font-size: 20px;
+  line-height: 1em;
+}
+.firstTable a{
+  color: rgb(0, 63, 68);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.firstImg{
+  width: 120%;
+}
+.secondImg{
+  width: 120%;
+}
+
+.slider{
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  border: solid black 1px;
+}
+
+.frame{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.items{
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 2000px;
+}
+
+.items li{
+  width: 400px;
+}
+
+.items li img{
+  width: 50%;
+}
+
+/*FOOTER's STYLE*/
+.footer{
+  width: 100%;
+  height: 100px;
+  border: solid black 1px;
+  background-color: rgb(0, 0, 0);
+}
+
+.foot-p{
+  font-size: 33px;
+  color: white;
+  padding: 0;
+  text-align: center;
+
+  width: 80%;
+  margin: 0px auto;
+  font-style: italic;
+}
+
+.foot-text{
+  font-size: 17px;
+  color: white;
+  width: 80%;
+  font-style: italic;
+  text-align: center;
+  margin: 0px auto;
+}
+
+/*DROPDOWN*/
+
+.dropdown-content,.dropdown-contentOne{
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: rgb(0,63,69);
+    min-width: 300px;
+    left: 27.5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    border-radius: 10px;
+}
+.dropdown-contentOne{
+  left: 40%;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 6px 6px;
+    display: block;
+    color: white;
+}
+.dropdown-contentOne a{
+    color: black;
+    text-decoration: none;
+    padding: 6px 6px;
+    display: block;
+    color: white;}
+
+.dropdown-content a:hover {background-color: #f1f1f1;
+  border-radius: 5px;
+  color:black;
+}
+
+.dropdown-contentOne a:hover{background-color:#f1f1f1;
+color:black; }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdownOne:hover .dropdown-contentOne{
+  display: block;
+}
+.dropdownOne:hover .dropbtn{
+
+      background-color: #3e8e41;
+}
+/*SECOND PAGE ПРАКТИКА*/
+.headingOfSeconcPage{
+  font-size: 40px;
+  font-family: sans-serif;
+  width: 20%;
+  color: #003F44;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.contentPraktika{
+  width: 75%;
+  height: 2750px;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+.contentPraktika img{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.contentPraktika p{
+  width: 90%;
+  margin: 0px auto;
+  font-style: italic;
+  margin-top: 2%;
+  font-size: 25px;
+  color: #003F44;
+}
+
+.pr{
+  width: 45%;
+  height: 460px;
+  float: right;
+  margin-right: 0%;
+  padding-left: 10%;
+}
+.sf{
+  margin-left: 10%;
+  width: 35%;
+  height:460px;
+}
+
+.contentPraktika h2{
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+    color: #003F44;
+    margin-right: 7%;
+}
+.pr, .sf{
+  margin-top: 3%;
+}
+
+.sf li{
+  list-style: none;
+  margin-left: 4%;
+  color: #003f44;
+  font-size:25px;
+  margin-top: 4%;
+}
+
+/*SECOND PAGE ПРАКТИКА*/
+
+
+
+
+/*THIRD PAGE УСЛУГИ*/
+.contenUslugi{
+    width: 75%;
+    height: 1300px;
+    color: #003F44;
+    border:solid black 1px;
+    margin: 0px auto;
+    border-radius: 6px;
+    background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+.contenUslugi h1{
+  width: 30%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+
+.contenUslugi p{
+  width: 90%;
+  text-indent: 2%;
+  margin: 0px auto;
+  font-size: 17px;
+  margin-top: 1.5%;
+}
+.contenUslugi p:last-child{
+  font-size: 25px;
+}
+.contenUslugi img{
+  margin-left: 30%;
+  width: 40%;
+  margin-top: 2%;
+}
+
+/*CONTENT OF USLUGI 1 PAGE*/
+.contentUsFirst{
+  width: 75%;
+  height: 2000px;
+  color: black;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+.contentUsFirst h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+.contentUsFirst p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+.contentUsFirst p:last-child{
+    color: #003F44;
+}
+.contentUsFirst h4{
+  color:rgb(138, 7, 3);
+  width: 80%;
+  margin: 0px auto;
+}
+
+/*USLUGI 2 STYLE*/
+.contentUsSecond{
+  width: 75%;
+  height: 900px;
+  color: black;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+.contentUsSecond h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsSecond p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+.contentUsSecond ul{
+  padding-left: 6%;
+  width: 80%;
+  margin: 0px auto;
+  font-size: 18px;
+}
+.contentUsSecond p:last-child{
+  color: rgb(138, 7, 3);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*USLUGI3.php STYLE*/
+.contentUsThird{
+    width: 75%;
+    height: 1500px;
+    color: black;
+    border:solid black 1px;
+    margin: 0px auto;
+    border-radius: 6px;
+    background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+.contentUsThird h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsThird p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+/*USLUGI4.php STYLE*/
+.contentUsFourth{
+    width: 75%;
+    height: 1100px;
+    color: black;
+    border:solid black 1px;
+    margin: 0px auto;
+    border-radius: 6px;
+    background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+ .contentUsFourth h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsFourth p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+
+/*USLUGI5.php style*/
+.contentUsFivth{
+
+      width: 75%;
+      height: 900px;
+      color: black;
+      border:solid black 1px;
+      margin: 0px auto;
+      border-radius: 6px;
+      background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+
+}
+
+/*USLUGI6.php style*/
+
+.contentUsSixth{
+
+        width: 75%;
+        height: 1200px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsSixth h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsSixth p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+/*USLUGI7.php STYLE*/
+.contentUsSeventh{
+
+        width: 75%;
+        height: 600px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsSeventh h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsSeventh p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+.contentUsSeventh p:last-child{
+  font-size: 20px;
+  color: rgb(138, 7, 3);
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*USLUGI8.php STYLE*/
+.contentUsEight{
+
+        width: 75%;
+        height: 1000px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsEight h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsEight p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+/*USLUGI9.php STYLE*/
+.contentUsNinth{
+
+        width: 75%;
+        height: 700px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsNinth h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsNinth p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+/*USLUGI10.php STYLE*/
+.contentUsTenth{
+
+        width: 75%;
+        height: 1400px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsTenth h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsTenth p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+.contentUsEleventh{
+
+        width: 75%;
+        height: 1150px;
+        color: black;
+        border:solid black 1px;
+        margin: 0px auto;
+        border-radius: 6px;
+        background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+
+ .contentUsEleventh h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsEleventh p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+.contentUsTwelvth{
+
+          width: 75%;
+          height: 1150px;
+          color: black;
+          border:solid black 1px;
+          margin: 0px auto;
+          border-radius: 6px;
+          background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+          background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+.contentUsTwelvth h1{
+ font-weight: normal;
+ color: black;
+ width: 60%;
+ text-align: center;
+ margin: 0px auto;
+ margin-top: 4%;
+ font-size: 35px;
+}
+
+.contentUsTwelvth p{
+ width: 80%;
+ font-size: 18px;
+ text-indent: 3%;
+ margin: 0px auto;
+}
+
+
+.contentUsTri{
+  width: 75%;
+  height: 1800px;
+  color: black;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+.contentUsTri h1{
+  font-weight: normal;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  font-size: 35px;
+}
+
+.contentUsTri p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+.contentFourteen{
+    width: 75%;
+    height: 1800px;
+    color: black;
+    border:solid black 1px;
+    margin: 0px auto;
+    border-radius: 6px;
+    background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+
+.contentFourteen h1{
+    font-weight: normal;
+    color: black;
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 4%;
+    font-size: 35px;
+}
+
+.contentFourteen p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+
+/*-------------------------COMPANY.php STYLE*/
+.containerForCompany{
+  width: 75%;
+  height: 600px;
+  color: black;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}
+.containerForCompany h1{
+    font-weight: normal;
+    color: black;
+    text-decoration: underline;
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 4%;
+    font-size: 35px;
+}
+
+.containerForCompany p{
+  width: 80%;
+  font-size: 18px;
+  text-indent: 3%;
+  margin: 0px auto;
+}
+
+.containerForComand{
+  width: 75%;
+  height: 2000px;
+  color: black;
+  border:solid black 1px;
+  margin: 0px auto;
+  border-radius: 6px;
+  background: rgb(233, 233, 233); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(233, 233, 233), rgb(255, 255, 255)); /* Standard syntax */
+}

@@ -1,0 +1,117 @@
+<script src="jquery.js"></script>
+<div class="main_page_slider_wrapper">
+    <ul class="main_page_slider_elementsContainer main_page_slider_elementsContainer_transition">
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic" style="background-image: url(1.png)"></div>
+            <div class="main_page_slider_element_text">Lorem ipsum son de lora if koali</div>
+        </li>
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic"></div>
+            <div class="main_page_slider_element_text">hh</div>
+        </li>
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic"></div>
+            <div class="main_page_slider_element_text">m</div>
+        </li>
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic"></div>
+            <div class="main_page_slider_element_text">j</div>
+        </li>
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic"></div>
+            <div class="main_page_slider_element_text">j</div>
+        </li>
+        <li class="main_page_slider_element">
+            <div class="main_page_slider_element_pic" style="background-image: url(1.png)"></div>
+            <div class="main_page_slider_element_text">Lorem ipsum son de lora if koali</div>
+        </li>
+    </ul>
+</div>
+
+<style>
+    .main_page_slider_wrapper{
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+    .main_page_slider_elementsContainer{
+        width: 150%; padding: 0;margin: 0;position: relative;
+    }
+    .main_page_slider_elementsContainer_transition{transition: 500ms linear;}
+    .main_page_slider_element{
+        display: inline-block;
+        margin: 0.1%;
+    }
+    .main_page_slider_element_pic{
+        display: block;
+        overflow: hidden;
+        border-radius: 50%;
+        height: 70%;
+        width: 84%;
+        margin: 3% 8%;
+        background-color: #FAFAFF;
+        background-size: cover;
+        transition: 300ms;
+        cursor: pointer;
+    }
+    .main_page_slider_element_text{
+        vertical-align: text-bottom;
+        height: 20%;
+        width: 90%;
+        margin: 3% 5%;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #556;
+        transition: 300ms;
+    }
+    .main_page_slider_element:hover .main_page_slider_element_pic{
+        background-color: azure;
+        border-radius: 3%;
+    }
+    .main_page_slider_element:hover .main_page_slider_element_text{
+        color: #55A;
+    }
+    
+</style>
+
+<script>
+    var main_page_slider_element_width;
+    var main_page_slider_interval;
+    var main_page_slider_counter=0;
+    function main_page_slider_resize(){
+        main_page_slider_element_width=parseInt($(".main_page_slider_wrapper").css("width"))/4.5;
+        $(".main_page_slider_element").css("width",main_page_slider_element_width);
+        $(".main_page_slider_element").css("height",main_page_slider_element_width*1.2);   
+    }
+    function main_page_slider_move(dist){
+        $(".main_page_slider_elementsContainer").css("margin-left",
+                 parseInt($(".main_page_slider_elementsContainer").css("margin-left"))-dist);
+        main_page_slider_counter++;
+        if(main_page_slider_counter==23){
+            $(".main_page_slider_elementsContainer").removeClass
+            ("main_page_slider_elementsContainer_transition");
+            $(".main_page_slider_elementsContainer").css("margin-left",0);
+            for(var i=0;i<$(".main_page_slider_element").length;i++){
+                if(i<$(".main_page_slider_element").length-1)
+                    $($(".main_page_slider_element")[i]).html(
+                    $($(".main_page_slider_element")[i+1]).html());
+                else
+                    $($(".main_page_slider_element")[i]).html(
+                    $($(".main_page_slider_element")[0]).html());
+            }
+        }
+        if(main_page_slider_counter==24){
+            $(".main_page_slider_elementsContainer").addClass
+            ("main_page_slider_elementsContainer_transition");
+            main_page_slider_counter=0;
+        }
+    }
+    $(document).ready(function(){
+        main_page_slider_resize();
+        main_page_slider_interval=setInterval(function(){main_page_slider_move(main_page_slider_element_width/20);},500);        
+    })
+    $(window).resize(function(){main_page_slider_resize();})
+    $(".main_page_slider_wrapper").mouseenter(function(){clearInterval(main_page_slider_interval)});
+    $(".main_page_slider_wrapper").mouseleave(function(){main_page_slider_interval=setInterval(function(){main_page_slider_move(main_page_slider_element_width/20)},500)});
+</script>

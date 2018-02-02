@@ -1,0 +1,64 @@
+
+/*Header */
+
+.header{
+	background: #2F3438;
+	height: 100px;
+}
+	.header img{
+		position: absolute;
+		width: 200px;
+		margin-top: -55px;
+	}
+	.login-title{
+		margin-top: -70px;
+		text-decoration: none;
+		color: white;
+	}
+
+/*Content*/
+
+.content{
+	margin-top: 50px;
+	margin-left: 7%;
+	width:86%;
+}
+
+	img{
+		margin-left: 5%;
+		width: 90%;
+	}
+	p{
+		font-family: 'GothamPro';
+	}
+	button{
+		width:20%;
+		height: 50px;
+		margin-left: 40%;
+		font-size: 1em;
+		border-radius: 3px;
+		border:none;
+		background: rgba(70,180,207,.87);
+		color: gray;
+	}
+		button a{
+			text-decoration: none;
+			font-family: 'GothamPro';
+			color:gray;
+		}
+		
+	a.href{	
+		text-decoration: none;
+		margin-left: 45%;
+		padding: 20px;
+		background-color: #2F3438;
+		font-family: 'GothamPro'
+	}
+		a:active{
+			color: white;
+		}
+		span{
+			font-family: 'GothamPro';
+			color: white;
+		}
+

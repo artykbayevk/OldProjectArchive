@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8410D45C1CCDE6270067B5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410D45B1CCDE6270067B5D4 /* AppDelegate.swift */; };
+		8410D45E1CCDE6270067B5D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8410D45D1CCDE6270067B5D4 /* GameScene.sks */; };
+		8410D4601CCDE6270067B5D4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410D45F1CCDE6270067B5D4 /* GameScene.swift */; };
+		8410D4621CCDE6270067B5D4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410D4611CCDE6270067B5D4 /* GameViewController.swift */; };
+		8410D4651CCDE6270067B5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410D4631CCDE6270067B5D4 /* Main.storyboard */; };
+		8410D46A1CCDE6270067B5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410D4681CCDE6270067B5D4 /* LaunchScreen.storyboard */; };
+		8410D4751CCDE6270067B5D4 /* snow2battleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410D4741CCDE6270067B5D4 /* snow2battleTests.swift */; };
+		8410D4801CCDE6280067B5D4 /* snow2battleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410D47F1CCDE6280067B5D4 /* snow2battleUITests.swift */; };
+		847E39D91CD119CA0073E829 /* multiplayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E39D81CD119CA0073E829 /* multiplayerManager.swift */; };
+		849C98DC1CD178C9002540EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C98DB1CD178C9002540EC /* Assets.xcassets */; };
+		849C98E81CD19141002540EC /* StartPageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C98E71CD19141002540EC /* StartPageScene.swift */; };
+		849C99331CD1B3C4002540EC /* blood.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992A1CD1B3C4002540EC /* blood.atlas */; };
+		849C99341CD1B3C4002540EC /* bPlayerHarm.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992B1CD1B3C4002540EC /* bPlayerHarm.atlas */; };
+		849C99351CD1B3C4002540EC /* bPlayerShoot.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992C1CD1B3C4002540EC /* bPlayerShoot.atlas */; };
+		849C99361CD1B3C4002540EC /* bPlayerStay.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992D1CD1B3C4002540EC /* bPlayerStay.atlas */; };
+		849C99371CD1B3C4002540EC /* bPlayerWalk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992E1CD1B3C4002540EC /* bPlayerWalk.atlas */; };
+		849C99381CD1B3C4002540EC /* myPlayerHarm.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C992F1CD1B3C4002540EC /* myPlayerHarm.atlas */; };
+		849C99391CD1B3C4002540EC /* myPlayerShoot.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C99301CD1B3C4002540EC /* myPlayerShoot.atlas */; };
+		849C993A1CD1B3C4002540EC /* myPlayerStay.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C99311CD1B3C4002540EC /* myPlayerStay.atlas */; };
+		849C993B1CD1B3C4002540EC /* myPlayerWalk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 849C99321CD1B3C4002540EC /* myPlayerWalk.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8410D4711CCDE6270067B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8410D4501CCDE6270067B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8410D4571CCDE6270067B5D4;
+			remoteInfo = snow2battle;
+		};
+		8410D47C1CCDE6270067B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8410D4501CCDE6270067B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8410D4571CCDE6270067B5D4;
+			remoteInfo = snow2battle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8410D4581CCDE6270067B5D4 /* snow2battle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snow2battle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8410D45B1CCDE6270067B5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8410D45D1CCDE6270067B5D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8410D45F1CCDE6270067B5D4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8410D4611CCDE6270067B5D4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8410D4641CCDE6270067B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8410D4691CCDE6270067B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8410D46B1CCDE6270067B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410D4701CCDE6270067B5D4 /* snow2battleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snow2battleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8410D4741CCDE6270067B5D4 /* snow2battleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snow2battleTests.swift; sourceTree = "<group>"; };
+		8410D4761CCDE6270067B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410D47B1CCDE6270067B5D4 /* snow2battleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snow2battleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8410D47F1CCDE6280067B5D4 /* snow2battleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snow2battleUITests.swift; sourceTree = "<group>"; };
+		8410D4811CCDE6280067B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847E39D81CD119CA0073E829 /* multiplayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = multiplayerManager.swift; sourceTree = "<group>"; };
+		849C98DB1CD178C9002540EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849C98E71CD19141002540EC /* StartPageScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPageScene.swift; sourceTree = "<group>"; };
+		849C992A1CD1B3C4002540EC /* blood.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = blood.atlas; path = "Supporting Files/blood.atlas"; sourceTree = "<group>"; };
+		849C992B1CD1B3C4002540EC /* bPlayerHarm.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bPlayerHarm.atlas; path = "Supporting Files/bPlayerHarm.atlas"; sourceTree = "<group>"; };
+		849C992C1CD1B3C4002540EC /* bPlayerShoot.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bPlayerShoot.atlas; path = "Supporting Files/bPlayerShoot.atlas"; sourceTree = "<group>"; };
+		849C992D1CD1B3C4002540EC /* bPlayerStay.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bPlayerStay.atlas; path = "Supporting Files/bPlayerStay.atlas"; sourceTree = "<group>"; };
+		849C992E1CD1B3C4002540EC /* bPlayerWalk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bPlayerWalk.atlas; path = "Supporting Files/bPlayerWalk.atlas"; sourceTree = "<group>"; };
+		849C992F1CD1B3C4002540EC /* myPlayerHarm.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = myPlayerHarm.atlas; path = "Supporting Files/myPlayerHarm.atlas"; sourceTree = "<group>"; };
+		849C99301CD1B3C4002540EC /* myPlayerShoot.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = myPlayerShoot.atlas; path = "Supporting Files/myPlayerShoot.atlas"; sourceTree = "<group>"; };
+		849C99311CD1B3C4002540EC /* myPlayerStay.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = myPlayerStay.atlas; path = "Supporting Files/myPlayerStay.atlas"; sourceTree = "<group>"; };
+		849C99321CD1B3C4002540EC /* myPlayerWalk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = myPlayerWalk.atlas; path = "Supporting Files/myPlayerWalk.atlas"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8410D4551CCDE6270067B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D46D1CCDE6270067B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D4781CCDE6270067B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8410D44F1CCDE6270067B5D4 = {
+			isa = PBXGroup;
+			children = (
+				8410D45A1CCDE6270067B5D4 /* snow2battle */,
+				8410D4731CCDE6270067B5D4 /* snow2battleTests */,
+				8410D47E1CCDE6280067B5D4 /* snow2battleUITests */,
+				8410D4591CCDE6270067B5D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8410D4591CCDE6270067B5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8410D4581CCDE6270067B5D4 /* snow2battle.app */,
+				8410D4701CCDE6270067B5D4 /* snow2battleTests.xctest */,
+				8410D47B1CCDE6270067B5D4 /* snow2battleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8410D45A1CCDE6270067B5D4 /* snow2battle */ = {
+			isa = PBXGroup;
+			children = (
+				8410D45B1CCDE6270067B5D4 /* AppDelegate.swift */,
+				8410D45D1CCDE6270067B5D4 /* GameScene.sks */,
+				8410D45F1CCDE6270067B5D4 /* GameScene.swift */,
+				849C98E71CD19141002540EC /* StartPageScene.swift */,
+				8410D4611CCDE6270067B5D4 /* GameViewController.swift */,
+				8410D4631CCDE6270067B5D4 /* Main.storyboard */,
+				847E39D81CD119CA0073E829 /* multiplayerManager.swift */,
+				849C98DB1CD178C9002540EC /* Assets.xcassets */,
+				8410D4681CCDE6270067B5D4 /* LaunchScreen.storyboard */,
+				8410D46B1CCDE6270067B5D4 /* Info.plist */,
+				849C99291CD1B3A0002540EC /* Supporting Files */,
+			);
+			path = snow2battle;
+			sourceTree = "<group>";
+		};
+		8410D4731CCDE6270067B5D4 /* snow2battleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8410D4741CCDE6270067B5D4 /* snow2battleTests.swift */,
+				8410D4761CCDE6270067B5D4 /* Info.plist */,
+			);
+			path = snow2battleTests;
+			sourceTree = "<group>";
+		};
+		8410D47E1CCDE6280067B5D4 /* snow2battleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8410D47F1CCDE6280067B5D4 /* snow2battleUITests.swift */,
+				8410D4811CCDE6280067B5D4 /* Info.plist */,
+			);
+			path = snow2battleUITests;
+			sourceTree = "<group>";
+		};
+		849C99291CD1B3A0002540EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849C992A1CD1B3C4002540EC /* blood.atlas */,
+				849C992B1CD1B3C4002540EC /* bPlayerHarm.atlas */,
+				849C992C1CD1B3C4002540EC /* bPlayerShoot.atlas */,
+				849C992D1CD1B3C4002540EC /* bPlayerStay.atlas */,
+				849C992E1CD1B3C4002540EC /* bPlayerWalk.atlas */,
+				849C992F1CD1B3C4002540EC /* myPlayerHarm.atlas */,
+				849C99301CD1B3C4002540EC /* myPlayerShoot.atlas */,
+				849C99311CD1B3C4002540EC /* myPlayerStay.atlas */,
+				849C99321CD1B3C4002540EC /* myPlayerWalk.atlas */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8410D4571CCDE6270067B5D4 /* snow2battle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8410D4841CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battle" */;
+			buildPhases = (
+				8410D4541CCDE6270067B5D4 /* Sources */,
+				8410D4551CCDE6270067B5D4 /* Frameworks */,
+				8410D4561CCDE6270067B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = snow2battle;
+			productName = snow2battle;
+			productReference = 8410D4581CCDE6270067B5D4 /* snow2battle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8410D46F1CCDE6270067B5D4 /* snow2battleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8410D4871CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battleTests" */;
+			buildPhases = (
+				8410D46C1CCDE6270067B5D4 /* Sources */,
+				8410D46D1CCDE6270067B5D4 /* Frameworks */,
+				8410D46E1CCDE6270067B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8410D4721CCDE6270067B5D4 /* PBXTargetDependency */,
+			);
+			name = snow2battleTests;
+			productName = snow2battleTests;
+			productReference = 8410D4701CCDE6270067B5D4 /* snow2battleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8410D47A1CCDE6270067B5D4 /* snow2battleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8410D48A1CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battleUITests" */;
+			buildPhases = (
+				8410D4771CCDE6270067B5D4 /* Sources */,
+				8410D4781CCDE6270067B5D4 /* Frameworks */,
+				8410D4791CCDE6270067B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8410D47D1CCDE6270067B5D4 /* PBXTargetDependency */,
+			);
+			name = snow2battleUITests;
+			productName = snow2battleUITests;
+			productReference = 8410D47B1CCDE6270067B5D4 /* snow2battleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8410D4501CCDE6270067B5D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Yerbol;
+				TargetAttributes = {
+					8410D4571CCDE6270067B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 75488M26SQ;
+					};
+					8410D46F1CCDE6270067B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BJY42Y95QC;
+						TestTargetID = 8410D4571CCDE6270067B5D4;
+					};
+					8410D47A1CCDE6270067B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BJY42Y95QC;
+						TestTargetID = 8410D4571CCDE6270067B5D4;
+					};
+				};
+			};
+			buildConfigurationList = 8410D4531CCDE6270067B5D4 /* Build configuration list for PBXProject "snow2battle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8410D44F1CCDE6270067B5D4;
+			productRefGroup = 8410D4591CCDE6270067B5D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8410D4571CCDE6270067B5D4 /* snow2battle */,
+				8410D46F1CCDE6270067B5D4 /* snow2battleTests */,
+				8410D47A1CCDE6270067B5D4 /* snow2battleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8410D4561CCDE6270067B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410D45E1CCDE6270067B5D4 /* GameScene.sks in Resources */,
+				849C993A1CD1B3C4002540EC /* myPlayerStay.atlas in Resources */,
+				849C99351CD1B3C4002540EC /* bPlayerShoot.atlas in Resources */,
+				849C993B1CD1B3C4002540EC /* myPlayerWalk.atlas in Resources */,
+				849C99341CD1B3C4002540EC /* bPlayerHarm.atlas in Resources */,
+				8410D46A1CCDE6270067B5D4 /* LaunchScreen.storyboard in Resources */,
+				849C99391CD1B3C4002540EC /* myPlayerShoot.atlas in Resources */,
+				849C99381CD1B3C4002540EC /* myPlayerHarm.atlas in Resources */,
+				849C99361CD1B3C4002540EC /* bPlayerStay.atlas in Resources */,
+				849C99371CD1B3C4002540EC /* bPlayerWalk.atlas in Resources */,
+				8410D4651CCDE6270067B5D4 /* Main.storyboard in Resources */,
+				849C98DC1CD178C9002540EC /* Assets.xcassets in Resources */,
+				849C99331CD1B3C4002540EC /* blood.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D46E1CCDE6270067B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D4791CCDE6270067B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8410D4541CCDE6270067B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410D4601CCDE6270067B5D4 /* GameScene.swift in Sources */,
+				8410D4621CCDE6270067B5D4 /* GameViewController.swift in Sources */,
+				847E39D91CD119CA0073E829 /* multiplayerManager.swift in Sources */,
+				8410D45C1CCDE6270067B5D4 /* AppDelegate.swift in Sources */,
+				849C98E81CD19141002540EC /* StartPageScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D46C1CCDE6270067B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410D4751CCDE6270067B5D4 /* snow2battleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410D4771CCDE6270067B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410D4801CCDE6280067B5D4 /* snow2battleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8410D4721CCDE6270067B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8410D4571CCDE6270067B5D4 /* snow2battle */;
+			targetProxy = 8410D4711CCDE6270067B5D4 /* PBXContainerItemProxy */;
+		};
+		8410D47D1CCDE6270067B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8410D4571CCDE6270067B5D4 /* snow2battle */;
+			targetProxy = 8410D47C1CCDE6270067B5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8410D4631CCDE6270067B5D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8410D4641CCDE6270067B5D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8410D4681CCDE6270067B5D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8410D4691CCDE6270067B5D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8410D4821CCDE6280067B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8410D4831CCDE6280067B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8410D4851CCDE6280067B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = snow2battle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aks.snow2battle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8410D4861CCDE6280067B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = snow2battle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aks.snow2battle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8410D4881CCDE6280067B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = snow2battleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yerbol.snow2battleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow2battle.app/snow2battle";
+			};
+			name = Debug;
+		};
+		8410D4891CCDE6280067B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = snow2battleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yerbol.snow2battleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow2battle.app/snow2battle";
+			};
+			name = Release;
+		};
+		8410D48B1CCDE6280067B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = snow2battleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yerbol.snow2battleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = snow2battle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8410D48C1CCDE6280067B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = snow2battleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yerbol.snow2battleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = snow2battle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8410D4531CCDE6270067B5D4 /* Build configuration list for PBXProject "snow2battle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8410D4821CCDE6280067B5D4 /* Debug */,
+				8410D4831CCDE6280067B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8410D4841CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8410D4851CCDE6280067B5D4 /* Debug */,
+				8410D4861CCDE6280067B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8410D4871CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8410D4881CCDE6280067B5D4 /* Debug */,
+				8410D4891CCDE6280067B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8410D48A1CCDE6280067B5D4 /* Build configuration list for PBXNativeTarget "snow2battleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8410D48B1CCDE6280067B5D4 /* Debug */,
+				8410D48C1CCDE6280067B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8410D4501CCDE6270067B5D4 /* Project object */;
+}

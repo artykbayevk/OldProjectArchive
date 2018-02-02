@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/all.css">
+	<link rel="stylesheet" type="text/css" href="tutorial.css">
+	<script src="angular.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="myapp.js"></script>
+</head>
+<header class="header header-bordered">
+	<img src="images/logo-svg2.png">
+	<a href="#" class="login-title">Automato CSS Tutorial</a>
+</header>
+<body>
+	<div class="content" ui-view >	
+	</div>
+	<div class="right-nav">
+		<div class="navigation">
+			<li class="nav-list"><a ui-sref="get-started">Get Started</a></li>
+			<li class="nav-list"><a ui-sref="icons">Icons</a></li>
+			<li class="nav-list"><a ui-sref="inputs">Inputs</a></li>
+			<li class="nav-list"><a href="http://blog.weare1910.com/post/72755990718/grids-from-typography">Grid System</a></li>
+			<li class="nav-list"><a ui-sref="fonts">Fonts</a></li>
+			<li class="nav-list"><a href="">Animation</a></li>
+			<li class="nav-list"><a href="">Alert</a></li>
+			<li class="nav-list"><a href="">Dropdown</a></li>
+		</div>
+	</div>	
+</body>
+</html>

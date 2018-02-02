@@ -1,0 +1,26 @@
+.content-nav{
+	padding-left: 10px;
+}
+.icons{
+	margin-top:50px;
+}
+	.item{
+		width: 150px;
+		height: 150px;
+		margin: 5px;
+		background-color: #EBEBEB;
+		float: left;
+		text-align: center;
+		padding-top: 40px;
+	}
+		.item i{
+			font-size: 40px;
+		}
+		.item label{
+			font-family: 'GothamPro'
+		}
+	.item:hover{
+		color: white;
+		cursor: pointer;
+		background-color: #5EBED5;
+	}
